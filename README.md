@@ -9,15 +9,18 @@ how to install:
 
   ```
   npm install
-  tsc
+  npm install tsc
+  npm start
   ```
   (you need NPM and Typescript stuff installed)
 5. create a symbolic link in OrientDB /www directory to the root of this project, eg.
 
   ```
   cd OrientDB/www/
-  ln -s root/to/this/project/ ui
+  mklink /D where/to/make/ui root/to/this/project/
   ```
+  
+  Don;t forget to add ui in the end
 6. Start OrientDB and create a DB called `geo`
 7. Execute the following statements in OrientDB
 
